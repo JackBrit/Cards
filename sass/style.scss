@@ -1,0 +1,19 @@
+@import "compass/reset";
+
+@import 'partials/mixins';   
+@import 'partials/typography';  
+@import 'partials/ui'; 
+
+@import "breakpoints/base";
+
+@media screen and (max-width : 640px) { 
+	@import 'breakpoints/_320up';
+}
+
+@media screen and (min-width : 641px) and (max-width : 949px) {
+	@import 'breakpoints/_641up';
+}
+
+@media screen and (max-width : 950px) {
+	@import 'breakpoints/_950up';
+} 
