@@ -1,34 +1,44 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/cards.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	
 	<body>
-		<a href="" onclick="shuffle();return false;">Shuffle Deck</a>
-		<a href="" onclick="deal();return false;">Deal</a>
-		<a href="" onclick="reset();return false;">Reset Deck</a>
+		<div id="header">
+	    	<a href="#" id="mobile-menu" class="navicon-button x">
+		      <div class="navicon"></div>
+		    </a> 
+			<ul class="header-inner">
+				<li><a class="button" href="" onclick="shuffle();return false;">Shuffle Deck</a></li>
+				<li><a class="button" href="" onclick="deal();return false;">Deal</a></li>
+				<li><a class="button" href="" onclick="reset();return false;">Reset Deck</a></li>
+				<li><a class="button" href="#" id="show-text">Show Text</a></li>
+			</ul>
+			<div id="text-info">
+				<form action="" onsubmit="return false;">
+				  <div class="text-box">
+				    <b>Deck:</b><br>
+				    <textarea rows="7"></textarea>
+				  </div>
+				  <div class="text-box">
+				    <b>Hand:</b><br>
+				    <textarea rows="7"></textarea>
+				  </div>
+				</form>
+			</div>
+		</div>
 		
 		<div id="playing-area">
 			<div id="deck" class="cardArea"></div>	
 			<div id="hand">
 				<div id="hand-inner" class="cardArea"></div>
 			</div>
-		</div>
-		
-		<div id="text-info">
-			<form action="" onsubmit="return false;">
-			  <div style="float:left;margin-right:1em;">
-			    <b>Deck:</b><br>
-			    <textarea rows="10" cols="20" style="margin-left: 0px; margin-right: 0px; width: 136px;"></textarea>
-			  </div>
-			  <div style="float:left;margin-right:1em;">
-			    <b>Hand:</b><br>
-			    <textarea rows="10" cols="20"></textarea>
-			  </div>
-			</form>
 		</div>
 	</body>
 </html>

@@ -1,0 +1,78 @@
+/*-----------------------------------------------------------------------------------------------------
+
+  Icon Stylesheet
+
+------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------
+	1.1 Menu Icon Animation
+----------------------------*/
+	$duration: .2s;
+	
+	$content-bg: #000;
+	
+	.navicon-button {
+	  display: inline-block;
+	  position: relative;
+	  padding: 11px 20px 0px;
+	  transition: $duration;
+	  cursor: pointer;
+	  user-select: none;
+	  float: right;
+	  right: 20px;
+	  margin-bottom: 15px;
+	  display: none;
+
+	
+	  .navicon:before, .navicon:after {
+	    transition: $duration;
+	  }
+	
+	  &:hover {
+	    transition: $duration;
+	    opacity: 1;
+	  }
+	}
+	
+	.navicon {
+	  position: relative;
+	  height: .3125rem;
+	  background: $content-bg;
+	  transition: $duration;
+	  left: -8px;
+	  top: 8px;
+
+	
+	  &:before, &:after {
+	    display: block;
+	    content: "";
+	    height: .3125rem;
+	    width: 23px;
+	    background: $content-bg;
+	    position: absolute;
+	    z-index: -1;
+	    transition: $duration $duration;
+	  }
+	
+	  &:after { top: -.625rem; }
+	}
+	
+	.open:not(.steps) .navicon:before,
+	.open:not(.steps) .navicon:after {
+	  top: 0 !important;
+	}
+	
+	.open .navicon:before,
+	.open .navicon:after {
+	  transition: $duration;
+	}
+	
+	.open.x {
+	  .navicon {
+	    background: transparent;
+	    top: 3px;
+	
+	    &:before { transform: rotate(-45deg); }
+	    &:after { transform: rotate(45deg); }
+	  }
+	}

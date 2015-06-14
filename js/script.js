@@ -104,4 +104,20 @@ function display() {
    document.forms[0].elements[1].value = s;
 }
 
+$(document).ready(function() {
+
+	$("#show-text").click(function() {
+		$(this).text(function(i, text){
+          return text === "Show Text" ? "Hide Text" : "Show Text";
+      	});
+		$("#text-info").toggle();
+	});
+	
+	$(".navicon-button").click(function(){
+	  $(this).toggleClass("open");
+	  $(".header-inner").slideToggle();
+	});
+
+});
+
 

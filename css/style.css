@@ -70,6 +70,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 ------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------
 
+  Typography Stylesheet
+
+------------------------------------------------------------------------------------------------------*/
+/* line 9, ../sass/partials/_typography.scss */
+#header {
+  font-family: Helvetica, arial, sans-serif;
+}
+/* line 12, ../sass/partials/_typography.scss */
+#header .header-inner {
+  text-align: center;
+}
+
+/* line 17, ../sass/partials/_typography.scss */
+a {
+  text-decoration: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------
+
   Card Stylesheet
 
   [Table of contents]
@@ -98,6 +117,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 3.75em;
   height: 5.00em;
   z-index: 0;
+  outline: 3px solid #FFF;
+  outline-offset: -4px;
   /*-----------------------
   	1.1 Front
   ------------------------*/
@@ -108,7 +129,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     1.2 Colour
   ------------------------*/
 }
-/* line 32, ../sass/partials/_ui-cards.scss */
+/* line 34, ../sass/partials/_ui-cards.scss */
 .card .front {
   background-color: #ffffff;
   color: #000000;
@@ -120,7 +141,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
   height: 100%;
 }
-/* line 41, ../sass/partials/_ui-cards.scss */
+/* line 43, ../sass/partials/_ui-cards.scss */
 .card .index {
   font-size: 50%;
   font-weight: bold;
@@ -129,7 +150,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 0.25em;
   top: 0.25em;
 }
-/* line 49, ../sass/partials/_ui-cards.scss */
+/* line 51, ../sass/partials/_ui-cards.scss */
 .card .index.bottom {
   top: inherit;
   left: inherit;
@@ -141,14 +162,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 58, ../sass/partials/_ui-cards.scss */
+/* line 60, ../sass/partials/_ui-cards.scss */
 .card .ace {
   font-size: 270%;
   position: absolute;
   left: 0.325em;
   top: 0.400em;
 }
-/* line 65, ../sass/partials/_ui-cards.scss */
+/* line 67, ../sass/partials/_ui-cards.scss */
 .card .face {
   border: 1px solid #000000;
   position: absolute;
@@ -157,97 +178,97 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 2.6em;
   height: 4.0em;
 }
-/* line 77, ../sass/partials/_ui-cards.scss */
+/* line 79, ../sass/partials/_ui-cards.scss */
 .card .spotA1 {
   position: absolute;
   left: 0.60em;
   top: 0.5em;
 }
-/* line 78, ../sass/partials/_ui-cards.scss */
+/* line 80, ../sass/partials/_ui-cards.scss */
 .card .spotA2 {
   position: absolute;
   left: 0.60em;
   top: 1.5em;
 }
-/* line 79, ../sass/partials/_ui-cards.scss */
+/* line 81, ../sass/partials/_ui-cards.scss */
 .card .spotA3 {
   position: absolute;
   left: 0.60em;
   top: 2.0em;
 }
-/* line 80, ../sass/partials/_ui-cards.scss */
+/* line 82, ../sass/partials/_ui-cards.scss */
 .card .spotA4 {
   position: absolute;
   left: 0.60em;
   top: 2.5em;
 }
-/* line 81, ../sass/partials/_ui-cards.scss */
+/* line 83, ../sass/partials/_ui-cards.scss */
 .card .spotA5 {
   position: absolute;
   left: 0.60em;
   top: 3.5em;
 }
-/* line 83, ../sass/partials/_ui-cards.scss */
+/* line 85, ../sass/partials/_ui-cards.scss */
 .card .spotB1 {
   position: absolute;
   left: 1.55em;
   top: 0.5em;
 }
-/* line 84, ../sass/partials/_ui-cards.scss */
+/* line 86, ../sass/partials/_ui-cards.scss */
 .card .spotB2 {
   position: absolute;
   left: 1.55em;
   top: 1.0em;
 }
-/* line 85, ../sass/partials/_ui-cards.scss */
+/* line 87, ../sass/partials/_ui-cards.scss */
 .card .spotB3 {
   position: absolute;
   left: 1.55em;
   top: 2.0em;
 }
-/* line 86, ../sass/partials/_ui-cards.scss */
+/* line 88, ../sass/partials/_ui-cards.scss */
 .card .spotB4 {
   position: absolute;
   left: 1.55em;
   top: 3.0em;
 }
-/* line 87, ../sass/partials/_ui-cards.scss */
+/* line 89, ../sass/partials/_ui-cards.scss */
 .card .spotB5 {
   position: absolute;
   left: 1.55em;
   top: 3.5em;
 }
-/* line 89, ../sass/partials/_ui-cards.scss */
+/* line 91, ../sass/partials/_ui-cards.scss */
 .card .spotC1 {
   position: absolute;
   left: 2.50em;
   top: 0.5em;
 }
-/* line 90, ../sass/partials/_ui-cards.scss */
+/* line 92, ../sass/partials/_ui-cards.scss */
 .card .spotC2 {
   position: absolute;
   left: 2.50em;
   top: 1.5em;
 }
-/* line 91, ../sass/partials/_ui-cards.scss */
+/* line 93, ../sass/partials/_ui-cards.scss */
 .card .spotC3 {
   position: absolute;
   left: 2.50em;
   top: 2.0em;
 }
-/* line 92, ../sass/partials/_ui-cards.scss */
+/* line 94, ../sass/partials/_ui-cards.scss */
 .card .spotC4 {
   position: absolute;
   left: 2.50em;
   top: 2.5em;
 }
-/* line 93, ../sass/partials/_ui-cards.scss */
+/* line 95, ../sass/partials/_ui-cards.scss */
 .card .spotC5 {
   position: absolute;
   left: 2.50em;
   top: 3.5em;
 }
-/* line 95, ../sass/partials/_ui-cards.scss */
+/* line 97, ../sass/partials/_ui-cards.scss */
 .card .spotA4,
 .card .spotB4,
 .card .spotC4,
@@ -260,7 +281,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 107, ../sass/partials/_ui-cards.scss */
+/* line 109, ../sass/partials/_ui-cards.scss */
 .card .red {
   color: #ff0000;
 }
@@ -268,9 +289,110 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*-----------------------
   1. Hand Cards
 ------------------------*/
-/* line 116, ../sass/partials/_ui-cards.scss */
+/* line 118, ../sass/partials/_ui-cards.scss */
 #hand .card:hover {
   z-index: 1;
+}
+
+/*-----------------------------------------------------------------------------------------------------
+
+  Buttons Stylesheet
+
+------------------------------------------------------------------------------------------------------*/
+/* line 7, ../sass/partials/_ui-buttons.scss */
+.button {
+  padding: 15px 20px;
+  color: #FFF;
+  background-color: #000;
+  width: 100px;
+  display: inline-block;
+}
+/* line 14, ../sass/partials/_ui-buttons.scss */
+.button:hover {
+  background: #EEE;
+  color: #000;
+}
+
+/*-----------------------------------------------------------------------------------------------------
+
+  Icon Stylesheet
+
+------------------------------------------------------------------------------------------------------*/
+/*----------------------------
+	1.1 Menu Icon Animation
+----------------------------*/
+/* line 14, ../sass/partials/_ui-icons.scss */
+.navicon-button {
+  display: inline-block;
+  position: relative;
+  padding: 11px 20px 0px;
+  transition: 0.2s;
+  cursor: pointer;
+  user-select: none;
+  float: right;
+  right: 20px;
+  margin-bottom: 15px;
+  display: none;
+}
+/* line 27, ../sass/partials/_ui-icons.scss */
+.navicon-button .navicon:before, .navicon-button .navicon:after {
+  transition: 0.2s;
+}
+/* line 31, ../sass/partials/_ui-icons.scss */
+.navicon-button:hover {
+  transition: 0.2s;
+  opacity: 1;
+}
+
+/* line 37, ../sass/partials/_ui-icons.scss */
+.navicon {
+  position: relative;
+  height: .3125rem;
+  background: #000;
+  transition: 0.2s;
+  left: -8px;
+  top: 8px;
+}
+/* line 46, ../sass/partials/_ui-icons.scss */
+.navicon:before, .navicon:after {
+  display: block;
+  content: "";
+  height: .3125rem;
+  width: 23px;
+  background: #000;
+  position: absolute;
+  z-index: -1;
+  transition: 0.2s 0.2s;
+}
+/* line 57, ../sass/partials/_ui-icons.scss */
+.navicon:after {
+  top: -.625rem;
+}
+
+/* line 60, ../sass/partials/_ui-icons.scss */
+.open:not(.steps) .navicon:before,
+.open:not(.steps) .navicon:after {
+  top: 0 !important;
+}
+
+/* line 65, ../sass/partials/_ui-icons.scss */
+.open .navicon:before,
+.open .navicon:after {
+  transition: 0.2s;
+}
+
+/* line 71, ../sass/partials/_ui-icons.scss */
+.open.x .navicon {
+  background: transparent;
+  top: 3px;
+}
+/* line 75, ../sass/partials/_ui-icons.scss */
+.open.x .navicon:before {
+  transform: rotate(-45deg);
+}
+/* line 76, ../sass/partials/_ui-icons.scss */
+.open.x .navicon:after {
+  transform: rotate(45deg);
 }
 
 /*-----------------------------------------------------------------------------------------------------
@@ -283,35 +405,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   2. Text Information
 
 ------------------------------------------------------------------------------------------------------*/
+/* line 12, ../sass/breakpoints/base.scss */
+#header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  background: #FFFFFF;
+  z-index: 9999;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+/* line 21, ../sass/breakpoints/base.scss */
+#header .header-inner {
+  width: 60%;
+  margin: 0 auto;
+}
+/* line 25, ../sass/breakpoints/base.scss */
+#header .header-inner li {
+  display: inline-block;
+  min-width: 100px;
+  margin: 5px 10px;
+}
+
 /*-----------------------
   1. Playing Area
 ------------------------*/
-/* line 15, ../sass/breakpoints/base.scss */
+/* line 36, ../sass/breakpoints/base.scss */
 #playing-area {
   width: 100%;
   margin: 0 auto;
   display: block;
   position: relative;
-  height: 100%;
+  height: 75%;
   overflow: hidden;
+  top: 25%;
 }
-/* line 23, ../sass/breakpoints/base.scss */
+/* line 45, ../sass/breakpoints/base.scss */
 #playing-area #deck {
   width: 11.75em;
   margin: 0 auto;
 }
-/* line 28, ../sass/breakpoints/base.scss */
+/* line 50, ../sass/breakpoints/base.scss */
 #playing-area #hand {
   position: absolute;
   bottom: 100px;
-  left: 50%;
+  left: 33%;
 }
-/* line 33, ../sass/breakpoints/base.scss */
+/* line 55, ../sass/breakpoints/base.scss */
 #playing-area #hand #hand-inner {
   position: relative;
   left: -75%;
 }
-/* line 39, ../sass/breakpoints/base.scss */
+/* line 61, ../sass/breakpoints/base.scss */
 #playing-area .cardArea {
   position: relative;
 }
@@ -319,10 +464,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*-----------------------
   2. Text Information
 ------------------------*/
-/* line 47, ../sass/breakpoints/base.scss */
+/* line 69, ../sass/breakpoints/base.scss */
 #text-info {
   display: none;
-  position: fixed;
-  bottom: 0px;
+  width: 55%;
+  margin: 0 auto;
+}
+/* line 74, ../sass/breakpoints/base.scss */
+#text-info .text-box {
+  width: 45%;
+  display: inline-block;
+}
+/* line 78, ../sass/breakpoints/base.scss */
+#text-info .text-box:last-child {
+  float: right;
+}
+/* line 82, ../sass/breakpoints/base.scss */
+#text-info .text-box textarea {
   width: 100%;
+  resize: vertical;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 1, ../sass/breakpoints/_320up.scss */
+  #mobile-menu {
+    display: block;
+  }
+
+  /* line 5, ../sass/breakpoints/_320up.scss */
+  .header-inner {
+    display: none;
+  }
+
+  /* line 9, ../sass/breakpoints/_320up.scss */
+  .card {
+    font-size: 23pt;
+  }
+
+  /* line 14, ../sass/breakpoints/_320up.scss */
+  #playing-area #deck {
+    width: 8.75em;
+  }
+  /* line 18, ../sass/breakpoints/_320up.scss */
+  #playing-area #hand {
+    left: 10%;
+  }
 }

@@ -1,0 +1,19 @@
+/*-----------------------------------------------------------------------------------------------------
+
+  Typography Stylesheet
+
+------------------------------------------------------------------------------------------------------*/
+
+$font-family: Helvetica, arial, sans-serif;
+
+#header {
+  font-family: $font-family;
+  
+  	.header-inner {
+		text-align: center;
+  	}
+ }
+ 
+ a {
+	 text-decoration: none;
+ }
