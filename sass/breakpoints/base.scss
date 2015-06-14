@@ -1,0 +1,52 @@
+/*-----------------------------------------------------------------------------------------------------
+
+  Base Stylesheet
+
+  [Table of contents]
+
+  1. Playing Area
+  2. Text Information
+
+------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------
+  1. Playing Area
+------------------------*/
+#playing-area {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	
+		#deck {
+			width: 11.75em;
+			margin: 0 auto;
+		}
+		
+		#hand {
+			position: absolute;
+			bottom: 100px;
+			left: 50%;
+			
+				#hand-inner {
+					position: relative;
+					left: -75%;
+				}
+		}
+
+		.cardArea {
+			position: relative;
+		}
+}
+
+/*-----------------------
+  2. Text Information
+------------------------*/
+#text-info {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}

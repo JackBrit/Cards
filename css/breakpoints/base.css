@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------------------------------------------------
+
+  Base Stylesheet
+
+  [Table of contents]
+
+  1. Playing Area
+  2. Text Information
+
+------------------------------------------------------------------------------------------------------*/
+/*-----------------------
+  1. Playing Area
+------------------------*/
+/* line 15, ../../sass/breakpoints/base.scss */
+#playing-area {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 23, ../../sass/breakpoints/base.scss */
+#playing-area #deck {
+  width: 11.75em;
+  margin: 0 auto;
+}
+/* line 28, ../../sass/breakpoints/base.scss */
+#playing-area #hand {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+}
+/* line 33, ../../sass/breakpoints/base.scss */
+#playing-area #hand #hand-inner {
+  position: relative;
+  left: -75%;
+}
+/* line 39, ../../sass/breakpoints/base.scss */
+#playing-area .cardArea {
+  position: relative;
+}
+
+/*-----------------------
+  2. Text Information
+------------------------*/
+/* line 47, ../../sass/breakpoints/base.scss */
+#text-info {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}

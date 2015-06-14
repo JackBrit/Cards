@@ -62,3 +62,267 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/*-----------------------------------------------------------------------------------------------------
+
+  Mixin Stylesheet
+
+------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------
+
+  Card Stylesheet
+
+  [Table of contents]
+
+  1. General Card
+  	1.1 Front
+  	  1.1.1 Spots
+  	1.2 Colour
+  	
+  2. Hand Cards
+
+------------------------------------------------------------------------------------------------------*/
+/*-----------------------
+  1. General Card
+------------------------*/
+/* line 19, ../sass/partials/_ui-cards.scss */
+.card {
+  background-image: url("../img/cardback.gif");
+  border: 1px solid #000;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 30pt;
+  position: absolute;
+  width: 3.75em;
+  height: 5.00em;
+  z-index: 0;
+  /*-----------------------
+  	1.1 Front
+  ------------------------*/
+  /*-----------------------
+    1.1.1 Spots
+  ------------------------*/
+  /*-----------------------
+    1.2 Colour
+  ------------------------*/
+}
+/* line 32, ../sass/partials/_ui-cards.scss */
+.card .front {
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 41, ../sass/partials/_ui-cards.scss */
+.card .index {
+  font-size: 50%;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 0.25em;
+  top: 0.25em;
+}
+/* line 49, ../sass/partials/_ui-cards.scss */
+.card .index.bottom {
+  top: inherit;
+  left: inherit;
+  bottom: 0.25em;
+  right: 0.25em;
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 58, ../sass/partials/_ui-cards.scss */
+.card .ace {
+  font-size: 270%;
+  position: absolute;
+  left: 0.325em;
+  top: 0.400em;
+}
+/* line 65, ../sass/partials/_ui-cards.scss */
+.card .face {
+  border: 1px solid #000000;
+  position: absolute;
+  left: 0.50em;
+  top: 0.45em;
+  width: 2.6em;
+  height: 4.0em;
+}
+/* line 77, ../sass/partials/_ui-cards.scss */
+.card .spotA1 {
+  position: absolute;
+  left: 0.60em;
+  top: 0.5em;
+}
+/* line 78, ../sass/partials/_ui-cards.scss */
+.card .spotA2 {
+  position: absolute;
+  left: 0.60em;
+  top: 1.5em;
+}
+/* line 79, ../sass/partials/_ui-cards.scss */
+.card .spotA3 {
+  position: absolute;
+  left: 0.60em;
+  top: 2.0em;
+}
+/* line 80, ../sass/partials/_ui-cards.scss */
+.card .spotA4 {
+  position: absolute;
+  left: 0.60em;
+  top: 2.5em;
+}
+/* line 81, ../sass/partials/_ui-cards.scss */
+.card .spotA5 {
+  position: absolute;
+  left: 0.60em;
+  top: 3.5em;
+}
+/* line 83, ../sass/partials/_ui-cards.scss */
+.card .spotB1 {
+  position: absolute;
+  left: 1.55em;
+  top: 0.5em;
+}
+/* line 84, ../sass/partials/_ui-cards.scss */
+.card .spotB2 {
+  position: absolute;
+  left: 1.55em;
+  top: 1.0em;
+}
+/* line 85, ../sass/partials/_ui-cards.scss */
+.card .spotB3 {
+  position: absolute;
+  left: 1.55em;
+  top: 2.0em;
+}
+/* line 86, ../sass/partials/_ui-cards.scss */
+.card .spotB4 {
+  position: absolute;
+  left: 1.55em;
+  top: 3.0em;
+}
+/* line 87, ../sass/partials/_ui-cards.scss */
+.card .spotB5 {
+  position: absolute;
+  left: 1.55em;
+  top: 3.5em;
+}
+/* line 89, ../sass/partials/_ui-cards.scss */
+.card .spotC1 {
+  position: absolute;
+  left: 2.50em;
+  top: 0.5em;
+}
+/* line 90, ../sass/partials/_ui-cards.scss */
+.card .spotC2 {
+  position: absolute;
+  left: 2.50em;
+  top: 1.5em;
+}
+/* line 91, ../sass/partials/_ui-cards.scss */
+.card .spotC3 {
+  position: absolute;
+  left: 2.50em;
+  top: 2.0em;
+}
+/* line 92, ../sass/partials/_ui-cards.scss */
+.card .spotC4 {
+  position: absolute;
+  left: 2.50em;
+  top: 2.5em;
+}
+/* line 93, ../sass/partials/_ui-cards.scss */
+.card .spotC5 {
+  position: absolute;
+  left: 2.50em;
+  top: 3.5em;
+}
+/* line 95, ../sass/partials/_ui-cards.scss */
+.card .spotA4,
+.card .spotB4,
+.card .spotC4,
+.card .spotA5,
+.card .spotB5,
+.card .spotC5 {
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 107, ../sass/partials/_ui-cards.scss */
+.card .red {
+  color: #ff0000;
+}
+
+/*-----------------------
+  1. Hand Cards
+------------------------*/
+/* line 116, ../sass/partials/_ui-cards.scss */
+#hand .card:hover {
+  z-index: 1;
+}
+
+/*-----------------------------------------------------------------------------------------------------
+
+  Base Stylesheet
+
+  [Table of contents]
+
+  1. Playing Area
+  2. Text Information
+
+------------------------------------------------------------------------------------------------------*/
+/*-----------------------
+  1. Playing Area
+------------------------*/
+/* line 15, ../sass/breakpoints/base.scss */
+#playing-area {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 23, ../sass/breakpoints/base.scss */
+#playing-area #deck {
+  width: 11.75em;
+  margin: 0 auto;
+}
+/* line 28, ../sass/breakpoints/base.scss */
+#playing-area #hand {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+}
+/* line 33, ../sass/breakpoints/base.scss */
+#playing-area #hand #hand-inner {
+  position: relative;
+  left: -75%;
+}
+/* line 39, ../sass/breakpoints/base.scss */
+#playing-area .cardArea {
+  position: relative;
+}
+
+/*-----------------------
+  2. Text Information
+------------------------*/
+/* line 47, ../sass/breakpoints/base.scss */
+#text-info {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}

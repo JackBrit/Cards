@@ -6,14 +6,17 @@
 
 @import "breakpoints/base";
 
+// Mobile Stylesheet
 @media screen and (max-width : 640px) { 
 	@import 'breakpoints/_320up';
 }
 
+// Tablet Stylesheet
 @media screen and (min-width : 641px) and (max-width : 949px) {
 	@import 'breakpoints/_641up';
 }
 
+// Desktop Stylesheet
 @media screen and (max-width : 950px) {
 	@import 'breakpoints/_950up';
 } 
