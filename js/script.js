@@ -53,6 +53,7 @@ function reset() {
 
   discards.combine(hand);
   deck.combine(discards);
+  stackMakeDeck();
   display();
 }
 
